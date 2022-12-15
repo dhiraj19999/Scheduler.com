@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <SideNavBar />
       <HomePage/>
-    <div>
+    </div>
   );
 }
 
