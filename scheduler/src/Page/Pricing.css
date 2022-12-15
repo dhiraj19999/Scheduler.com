@@ -1,0 +1,19 @@
+.container{
+    width: 100%;
+}
+.head{
+    font-size:bold;
+}
+.head button{
+    background-color:#6c6cff;
+    border-radius: 20px;
+    height: 25px;
+    width: 100px;
+    color: white;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.box{
+    /* border:1px solid red; */
+    margin-top:-8% ;
+}
