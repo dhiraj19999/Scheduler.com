@@ -539,12 +539,16 @@ export default function Navbar() {
           <Button variant="ghost" fontWeight="350">
             Contact sales
           </Button>
-          <Button variant="ghost" fontWeight="350"></Button>
+          <Button variant="ghost" fontWeight="350">
+            Login
+          </Button>
           <Button
             bg="#6c6cff"
             borderRadius="50"
             fontWeight="350"
             color="white"
+            ml={5}
+            _hover={{ bg: "#5151d5", color: " white" }}
             rightIcon={<ArrowForwardIcon />}
           >
             Get Started
@@ -580,11 +584,11 @@ export default function Navbar() {
                     Project
                   </MenuButton>
                   <MenuList>
-                    <MenuItem>Scheduler work management</MenuItem>
-                    <MenuItem>Scheduler marketer</MenuItem>
-                    <MenuItem>Scheduler sales CRM</MenuItem>
-                    <MenuItem>Scheduler projects</MenuItem>
-                    <MenuItem>Scheduler dev</MenuItem>
+                    <MenuItem>Scheduler Work Management</MenuItem>
+                    <MenuItem>Scheduler Marketer</MenuItem>
+                    <MenuItem>Scheduler Sales CRM</MenuItem>
+                    <MenuItem>Scheduler Projects</MenuItem>
+                    <MenuItem>Scheduler Development</MenuItem>
                   </MenuList>
                 </Menu>
                 <br></br>

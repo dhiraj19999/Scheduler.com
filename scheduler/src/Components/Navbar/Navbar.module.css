@@ -27,10 +27,3 @@
     margin-top: 10px;
     padding: 20px 60px 20px 60px;
 }
-.getStarted{
-    background-color: #6c6cff;
-}
-.getStarted:hover{
-    background-color: #5151d5;
-    color: black;
-}
