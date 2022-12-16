@@ -8,8 +8,10 @@ import { Button, Box, WrapItem, Wrap, ButtonGroup ,Checkbox, CheckboxGroup, Inpu
     Heading,
     p,HStack,
     Container,
-    flexbox,} from "@chakra-ui/react";
-import EndToEnd from '../Components/EndToEnd';
+    flexbox,
+    SimpleGrid,} from "@chakra-ui/react";
+import { useMediaQuery } from '@chakra-ui/react'
+
 
 
 
@@ -66,6 +68,9 @@ const workflow1 = [
   ];
 
 const HomePage = () => {
+
+    const [isLargerThan800] = useMediaQuery('(min-width: 800px)')
+
     const [dataWorkflow, setDataWorkFlow] = useState(workflow1[0]);
     const handleChangeWorkflow=(value)=>{
         workflow1.map((el)=>{
@@ -81,7 +86,7 @@ const HomePage = () => {
                 <p id="HomePage-heading1-box2">A Platform built for a</p>
                 <p id="HomePage-heading2-box2">new way of working</p>
                 <p id="HomePage-heading3-box2">What would you like to manage with scheduler.com Work OS?</p>
-                <Flex gap="10px">
+                <Flex id="box1-check" gap="10px" >
                     <CheckBox src="https://i.ibb.co/Nsczd8V/pngegg.png" width="80%" height="100%" para="Creative & design"/>
                     <CheckBox src="https://i.ibb.co/m05GWsy/5847eb76cef1014c0b5e484f.png" width="50%" height="50%"  para="Software Development" />
                     <CheckBox src="https://i.ibb.co/dMyCgfc/pngwing-com.png" width="50%" height="50%"  para="Marketing" />
@@ -211,7 +216,7 @@ const HomePage = () => {
         {/* workflow */}
         <Box id="box9">
             <Box id="box9-0">
-                <Flex>
+                
                         {workflow1.map((el) => {
                             return (
                                 <Button id="btnwork"
@@ -233,7 +238,7 @@ const HomePage = () => {
                                 </Button>
                             );
                             })}
-                </Flex>
+                
             </Box>
             <Box id="box9-1">
                 <Box boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} id="box9-1a">
@@ -252,6 +257,232 @@ const HomePage = () => {
     <Box id="box10">
         <p id="HomePage-heading1-box8"><span style={{fontWeight:"bolder"}}> End-to-end products</span> to run<br/> the core of your business</p>
         <p>Tailored products designed for every aspect of your teams' needs.</p>
+    </Box>
+
+    {/* day3 */}
+
+    <Box bg="#0C0D46">
+        <Box id="box11">
+            <Box id="box11-0">
+                <Flex>
+                    <center><img width={"50%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png" alt="error"/></center>
+                </Flex>
+                <p>For professionals and teams<br/>managing tasks & workflows</p>
+                <p>Manage tasks and workflows to fuel team collaboration and productivity at scale.</p>
+                <hr style={{borderColor: '#FFA318'}}></hr>
+                <p>Top use cases:</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Task management</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Project management</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Automated workflows</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Build your own</p>
+                <Button w="150px" h="50px" bg="#6161FF" borderRadius={"20px"} marginTop="50px" color="white" _hover={{cursor:"pointer"}} border={"transparent"}>
+                    Get Started
+                </Button>
+            </Box>
+
+            <Box id="box11-0">
+                <Flex>
+                    <center><img width={"50%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/marketer_main_logo.png" alt="error"/></center>
+                </Flex>
+                <p>For professionals and teams<br/>managing tasks & workflows</p>
+                <p>Manage tasks and workflows to fuel team collaboration and productivity at scale.</p>
+                <hr style={{borderColor: '#F14F9D'}}></hr>
+                <p>Top use cases:</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Task management</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Project management</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Automated workflows</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Build your own</p>
+                <Button w="150px" h="50px" bg="#6161FF" borderRadius={"20px"} marginTop="50px" color="white" _hover={{cursor:"pointer"}} border={"transparent"}>
+                    Get Started
+                </Button>
+            </Box>
+
+            <Box id="box11-0">
+                <Flex>
+                    <center><img width={"50%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/crm_main_logo.png" alt="error"/></center>
+                </Flex>
+                <p>For professionals and teams<br/>managing tasks & workflows</p>
+                <p>Manage tasks and workflows to fuel team collaboration and productivity at scale.</p>
+                <hr style={{borderColor: '#1DCE85'}}></hr>
+                <p>Top use cases:</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Task management</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Project management</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Automated workflows</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Build your own</p>
+                <Button w="150px" h="50px" bg="#6161FF" borderRadius={"20px"} marginTop="50px" color="white" _hover={{cursor:"pointer"}} border={"transparent"}>
+                    Get Started
+                </Button>
+            </Box>
+
+            <Box id="box11-0">
+                <Flex>
+                    <center><img width={"50%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/projects_main_logo.png" alt="error"/></center>
+                </Flex>
+                <p>For professionals and teams<br/>managing tasks & workflows</p>
+                <p>Manage tasks and workflows to fuel team collaboration and productivity at scale.</p>
+                <hr style={{borderColor: '#1DCE85'}}></hr>
+                <p>Top use cases:</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Task management</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Project management</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Automated workflows</p>
+                <p><span style={{color: "orange"}}>&#10003; </span> Build your own</p>
+                <Button w="150px" h="50px" bg="#6161FF" borderRadius={"20px"} marginTop="50px" color="white" _hover={{cursor:"pointer"}} border={"transparent"}>
+                    Get Started
+                </Button>
+            </Box>
+        </Box>
+    </Box>
+
+    <Box id="box12">
+        <img width={"100%"} src="https://i.ibb.co/2nhjgfg/ezgif-com-gif-maker.gif" />
+    </Box>
+
+    <Box id="box13">
+        <Box id="box13-0">
+            <img width={"70%"} height="100%" src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/support_globe.png" alt="error" />
+        </Box>
+        <Box id="box13-1">
+            <p id="HomePage-heading1-box8"><span style={{fontWeight:"bolder"}}>Supporting</span> your growth<br/> every step of the way</p>
+            <p>Our support superheroes are a click away to help you get the most out of monday.com, so you can focus on working without limits.</p>
+            <Box id="box13-2">
+                <Box id="box13-3">
+                    <img width="50px" height="40px" style={{marginTop:"20px",display:"flex", justifyContent:"center", alignItem:"center"}} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/phone.png" alt="Error" />
+                    <p><span style={{fontWeight:"bolder"}}>24/7</span><br/>support<br/>anytime,<br/>anywhere</p>
+                </Box>
+                <Box id="box13-3">
+                    <img width="50px" height="40px" style={{marginTop:"20px",display:"flex", justifyContent:"center", alignItem:"center"}} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/heart.png" alt="Error" />
+                    <p><span style={{fontWeight:"bolder"}}>Most Loved by</span><br/>customers on<br/>anytime,<br/>G2</p>
+                </Box>
+                <Box id="box13-3">
+                    <img width="50px" height="40px" style={{marginTop:"20px",display:"flex", justifyContent:"center", alignItem:"center"}} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/fast.png" alt="Error" />
+                    <p><span style={{fontWeight:"bolder"}}>2 hour</span><br/>average<br/>anytime,<br/>response time</p>
+                </Box>
+            </Box>
+            <Button w="150px" h="50px" bg="#6161FF" borderRadius={"20px"} marginTop="50px" color="white" _hover={{cursor:"pointer"}} border={"transparent"}>
+                Get Started
+            </Button>
+        </Box>
+    </Box>
+
+    <Box marginTop={"100px"}>
+        <center>
+            <img src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/review-cards/stars.png" alt="Error" />
+            <p id="HomePage-heading1-box8">An<span style={{fontWeight:"bolder"}}> award-winning</span> platform. <span style={{fontWeight:"bolder"}}> Loved</span> by customers.</p>
+            <p>Based on 10,000+ customer reviews.</p>
+        </center>
+    </Box>
+
+    {/* Footer */}
+    <Box id="box-14">
+        <Box id="box14-0">
+            <Heading color={"white"} size="l">Scheduler.com</Heading>
+            <a href="//monday.com/integrations/" target="_blank">Pricing</a>
+            <a href="//monday.com/integrations/" target="_blank">Contact us</a>
+            <a href="//monday.com/integrations/" target="_blank">Templates</a>
+            <a href="//monday.com/integrations/" target="_blank">SMB</a>
+            <a href="//monday.com/integrations/" target="_blank">Enterprise</a>
+            <a href="//monday.com/integrations/" target="_blank">Nonprofits</a>
+            <a href="//monday.com/integrations/" target="_blank">Apps marketplace</a>
+            <a href="//monday.com/integrations/" target="_blank">24/7 support</a>
+        </Box>
+
+        <Box id="box14-0">
+            <Heading color={"white"} size="l">Features</Heading>
+            <a href="//monday.com/integrations/" target="_blank">Docs</a>
+            <a href="//monday.com/integrations/" target="_blank">Integrations</a>
+            <a href="//monday.com/integrations/" target="_blank">Automations</a>
+            <a href="//monday.com/integrations/" target="_blank">Files</a>
+            <a href="//monday.com/integrations/" target="_blank">Dashboards</a>
+            <a href="//monday.com/integrations/" target="_blank">Kanban</a>
+            <a href="//monday.com/integrations/" target="_blank">Gantt</a>
+        </Box>
+
+        <Box id="box14-03">
+            <Heading color={"white"} size="l">Scheduler products</Heading>
+            <div style={{display:"flex", gap:"5px"}}>
+               <div style={{width:"5%", marginTop:"0px"}}>
+                    <img width={"100%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/wm_icon_footer.png" alt="Error" />
+               </div>
+               <a href="//monday.com/integrations/" target="_blank">Scheduler Work Management</a>
+            </div>
+            <div style={{display:"flex", gap:"5px"}}>
+               <div style={{width:"5%", marginTop:"0px"}}>
+                    <img width={"100%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/crm_icon_footer.png" alt="Error" />
+               </div>
+               <a href="//monday.com/integrations/" target="_blank">Scheduler Sales CRM</a>
+            </div>
+            <div style={{display:"flex", gap:"5px"}}>
+               <div style={{width:"5%", marginTop:"0px"}}>
+                    <img width={"100%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/marketer_icon_footer.png" alt="Error" />
+               </div>
+               <a href="//monday.com/integrations/" target="_blank">Scheduler Marketer</a>
+            </div>
+            <div style={{display:"flex", gap:"5px"}}>
+               <div style={{width:"5%", marginTop:"0px"}}>
+                    <img width={"100%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/projects_icon_footer.png" alt="Error" />
+               </div>
+               <a href="//monday.com/integrations/" target="_blank">Scheduler Projects</a>
+            </div>
+            <div style={{display:"flex", gap:"5px"}}>
+               <div style={{width:"5%", marginTop:"0px"}}>
+                    <img width={"100%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/monday_dev_product_management_software.png" alt="Error" />
+               </div>
+               <a href="//monday.com/integrations/" target="_blank">Scheduler Dev</a>
+            </div>
+            <br/>
+            <h4>More by Scheduler.com</h4>
+            <div style={{display:"flex", gap:"5px"}}>
+               <div style={{width:"5%", marginTop:"0px"}}>
+                    <img width={"100%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/canvas_icon_footer.png" alt="Error" />
+               </div>
+               <a href="//monday.com/integrations/" target="_blank">Canvas</a>
+            </div>
+            <div style={{display:"flex", gap:"5px"}}>
+               <div style={{width:"5%", marginTop:"0px"}}>
+                    <img width={"100%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/workforms_icon_footer.png" alt="Error" />
+               </div>
+               <a href="//monday.com/integrations/" target="_blank">WorkForms</a>
+            </div>
+        </Box>
+
+        <Box id="box14-0">
+            <Heading color={"white"} size="l">Use cases</Heading>
+            <a href="//monday.com/integrations/" target="_blank">Marketing</a>
+            <a href="//monday.com/integrations/" target="_blank">Project management</a>
+            <a href="//monday.com/integrations/" target="_blank">Sales</a>
+            <a href="//monday.com/integrations/" target="_blank">Developers</a>
+            <a href="//monday.com/integrations/" target="_blank">HR</a>
+            <a href="//monday.com/integrations/" target="_blank">IT</a>
+            <a href="//monday.com/integrations/" target="_blank">Operations</a>
+            <a href="//monday.com/integrations/" target="_blank">Construction</a>
+        </Box>
+
+        <Box id="box14-0">
+            <Heading color={"white"} size="l">Company</Heading>
+            <a href="//monday.com/integrations/" target="_blank">About Us</a>
+            <a href="//monday.com/integrations/" target="_blank">Careers - We're hiring!</a>
+            <a href="//monday.com/integrations/" target="_blank">Scheduler - U</a>
+            <a href="//monday.com/integrations/" target="_blank">Press</a>
+            <a href="//monday.com/integrations/" target="_blank">Press</a>
+            <a href="//monday.com/integrations/" target="_blank">Customer Stories</a>
+            <a href="//monday.com/integrations/" target="_blank">Become a partner</a>
+            <a href="//monday.com/integrations/" target="_blank">Sustainability & ESG</a>
+            <a href="//monday.com/integrations/" target="_blank">Affiliates</a>
+            <a href="//monday.com/integrations/" target="_blank">Digital Lift</a>
+        </Box>
+
+        <Box id="box14-0">
+            <Heading color={"white"} size="l">Resources</Heading>
+            <a href="//monday.com/integrations/" target="_blank">Help Center</a>
+            <a href="//monday.com/integrations/" target="_blank">Community</a>
+            <a href="//monday.com/integrations/" target="_blank">Blog</a>
+            <a href="//monday.com/integrations/" target="_blank">Webinars</a>
+            <a href="//monday.com/integrations/" target="_blank">Startup for Startup</a>
+            <a href="//monday.com/integrations/" target="_blank">Global events</a>
+            <a href="//monday.com/integrations/" target="_blank">App Development</a>
+            <a href="//monday.com/integrations/" target="_blank">Find a Partner</a>
+            <a href="//monday.com/integrations/" target="_blank">Compare</a>
+        </Box>
     </Box>
     
     
