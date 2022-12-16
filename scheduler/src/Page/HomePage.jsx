@@ -1,15 +1,10 @@
 import React,{useState} from 'react';
 import "./HomePage.css";
 import CheckBox from '../Components/CheckBox';
-import { Button, Box, WrapItem, Wrap, ButtonGroup ,Checkbox, CheckboxGroup, InputGroup, Input , InputRightElement, Image, Flex, Center, Grid, GridItem ,
-    IconButton,
-    useBreakpointValue,
-    Stack,Text, Img,
+import { Button, Box, Image, Flex ,
+    Text, Img,
     Heading,
-    p,HStack,
-    Container,
-    flexbox,
-    SimpleGrid,} from "@chakra-ui/react";
+    } from "@chakra-ui/react";
 import { useMediaQuery } from '@chakra-ui/react'
 import Navbar from '../Components/Navbar/Navbar';
 

@@ -3,18 +3,13 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AppContext } from "../Context/AppContextProvider";
 import { loginData } from "./api";
-import { Button, Box, WrapItem, Wrap, ButtonGroup ,Checkbox, CheckboxGroup, InputGroup, Input , InputRightElement, Image, Flex, Center, Grid, GridItem ,
-    IconButton,
-    useBreakpointValue,
-    FormLabel,Text, Img,
+import { Button, Box, Input ,Image,
+    FormLabel,
     Heading,
-    p,HStack,
-    Container,
-    flexbox,
-    SimpleGrid,} from "@chakra-ui/react";
+    } from "@chakra-ui/react";
 
 const LoginPage = () => {
-    const {authState, handleLogin, handleLogout} = useContext(AppContext);
+    const {authState, handleLogin} = useContext(AppContext);
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
