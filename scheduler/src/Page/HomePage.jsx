@@ -11,6 +11,7 @@ import { Button, Box, WrapItem, Wrap, ButtonGroup ,Checkbox, CheckboxGroup, Inpu
     flexbox,
     SimpleGrid,} from "@chakra-ui/react";
 import { useMediaQuery } from '@chakra-ui/react'
+import Navbar from '../Components/Navbar/Navbar';
 
 
 
@@ -81,6 +82,7 @@ const HomePage = () => {
        }
   return (
     <div>
+        <Navbar/>
         <Box id="box1">
             <Box id="box2">
                 <p id="HomePage-heading1-box2">A Platform built for a</p>
