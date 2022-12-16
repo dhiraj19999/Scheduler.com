@@ -18,6 +18,7 @@ import {
   ArrowForwardIcon,
   HamburgerIcon,
 } from "@chakra-ui/icons";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -534,13 +535,17 @@ export default function Navbar() {
         </Flex>
         <Flex display={{ base: "none", sm: "none", md: "none", lg: "flex" }}>
           <Button variant="ghost" fontWeight="350">
-            Pricing
+
+            <NavLink to="/pricing">Pricing</NavLink>
+
           </Button>
           <Button variant="ghost" fontWeight="350">
-            Contact sales
+
+            <NavLink to="/contact">Contact sales</NavLink>
+            
           </Button>
           <Button variant="ghost" fontWeight="350">
-            Login
+            <NavLink to="/login">Login</NavLink>
           </Button>
           <Button
             bg="#6c6cff"
