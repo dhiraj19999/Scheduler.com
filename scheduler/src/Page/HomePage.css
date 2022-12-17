@@ -1,0 +1,366 @@
+*{
+    font-family: "Segoe UI Symbol";
+}
+#box1 {
+    background-color: #0F1048;
+    height:700px;
+    margin-top: 90px;
+}
+#box1-check{
+    display: flex;
+}
+#box2{
+    /* border:1px solid red; */
+    font-family: "Segoe UI Symbol";
+    color:white;
+    width:70%;
+    height:auto;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center; /* fontSize={"100px"} width={"50%"} margin color="white" fontFamily={"Segoe UI Symbol"}; */
+}
+#HomePage-heading1-box2{
+    /* margin-bottom: -100px; */
+    font-size: 80px;
+}
+#HomePage-heading2-box2{
+    font-size: 80px;
+    margin-top: -50px;
+}
+#HomePage-heading3-box2{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#box4{
+    width: 80%;
+    
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    justify-content: center;
+    align-items: center;
+}
+#box4 img{
+    width:70%;
+    display: block;
+    margin-left: auto;
+   /*  margin-right: auto; */
+    
+}
+#box5{
+    display: flex;
+    width: 70%;
+    margin:auto;
+    
+    font-size: 30px;
+    justify-content: space-between;
+    text-align: justify;
+}
+#HomePage-heading1-box5{
+   /*  margin-bottom: -30px; */
+
+}
+#box6{
+    background-color: #0F1048;
+   
+}
+#box7{
+    /* border: 1px solid red; */
+    width:80%;
+    margin:auto;
+    display: flex;
+    color:white;
+    gap:100px;
+}
+#box7-0{
+    width:50%;
+   /*  border:1px solid greenyellow; */
+    font-size: 20px;
+    text-align: justify;
+}
+#box7-0 ::-webkit-scrollbar{
+    display: none;
+}
+#box7-1{
+    width:50%;
+    /* border:1px solid white; */
+    font-size: 20px; 
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box7-2{
+    width:50%;
+    display: flex;
+    /* border:1px solid yellow; */
+    justify-content: center;
+    align-items: center;
+}
+#HomePage-heading2-box5{
+    font-size: 30px;
+    
+}
+#HomePage-heading3-box5{
+    font-size: 16px;
+}
+#HomePage-heading1-box8{
+    font-size: 40px;
+    margin-top:50px;
+   margin-bottom: 10px;
+}
+#box9{
+    
+    margin: auto;
+    width: 70%;
+    margin-top: 40px;
+}
+#box9-0{
+  
+    width:70%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 15px;
+}
+#btnwork{
+    border: transparent;
+    
+}
+#btnwork:hover{
+    background-color: lightgrey;
+    color:"grey";
+    display:"flex";
+    flex-direction: column;
+
+}
+#box9-1{
+    display: flex;
+    gap:50px;
+    margin-top: 40px;
+}
+#box9-1a{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box9-1b{
+    width: 60%;
+    text-align: justify;
+    
+}
+#box9-1c{
+    display: flex;
+    /* margin-left: 15px; */
+    align-items: center;
+   /*  margin-bottom: -45px; */
+    
+}
+#box10{
+    margin-top: 70px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#box11{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: auto;
+    gap:30px;
+    justify-content: space-between;
+    
+}
+#box11-0{
+    margin-top: 50px;
+    width: 270px;
+    /* border: 1px solid red; */
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#box11-0:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#box13{
+    display: flex;
+    
+    width:70%;
+    margin: auto;
+}
+#box13-0{
+    width: 50%;
+    
+}
+#box13-1{
+    width: 50%;
+    text-align:left;
+}
+#box13-2{
+    display: flex;
+   
+    width:100%;
+}
+#box13-3{
+    display: flex;
+    /* border:1px solid red; */
+    width: 30%;
+}
+#box-14{
+    background-color: #0F1048;
+    display: flex;
+    
+    
+    margin:auto;
+    
+    justify-content: space-around;
+}
+#box14-0{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap:30px;
+    margin-top: 30px;
+}
+#box14-03{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap:30px;
+    width: auto;
+    margin-top: 30px;
+    
+    width:250px;
+}
+#box14-03>div{
+    width: 100%;
+    
+}
+#box14-03 a{
+    color: white;
+    text-decoration: none;
+}
+#box14-0>a{
+    color: white;
+    text-decoration: none;
+}
+h4{
+    color:white;
+}
+#box9-0{
+    display: flex;
+}
+
+
+
+/* 1080px */
+/* @media(min-width) */
+@media screen and (max-width: 1070px){
+#box1-check{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#HomePage-heading1-box2{
+    font-size: 50px;
+    padding:20px;
+}
+#HomePage-heading2-box2{
+    font-size: 50px;
+    padding:20px;
+}
+#box4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#box11{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#box13-0{
+    height: 100%;
+    margin-top: 150px;
+}
+#box9-0{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#box-14{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
+/* 730px */
+}
+@media screen and (max-width: 730px){
+
+#box7{
+    display: flex;
+    flex-direction: column;
+
+}
+#HomePage-heading1-box2{
+    font-size: 20px;
+    margin-top: 20px;
+}
+#HomePage-heading2-box2{
+    font-size: 20px;
+}
+#HomePage-heading3-box2{
+    font-size: xx-small;
+}
+#box1-check{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+    background-color: #0F1048;
+}
+#box1{
+    margin-bottom: 0px;
+    height: 1150px;
+}
+#box7-0{
+    width: 100%;
+}
+#box7-1{
+    width: 100%;
+}
+#box11{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+#box13-1{
+    font-size: 10px;
+}
+#HomePage-heading1-box8{
+    font-size: 20px;
+}
+#box13-3{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+}
+#box13-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+#box5{
+    font-size: 20px;
+}
+#HomePage-heading2-box5{
+    font-size: 20px;
+}
+#HomePage-heading1-box5{
+    font-size: 20px;
+}
+
+}

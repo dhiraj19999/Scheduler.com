@@ -1,0 +1,33 @@
+.main {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+
+.button {
+  font-weight: 350;
+  background-color: transparent;
+  margin-left: 40px;
+}
+
+.product_title {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.product_desc {
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.brand-icon {
+  padding: 5px;
+  border: 1px solid red;
+}
+.productmenu {
+  margin-top: 10px;
+  padding: 20px 60px 20px 60px;
+}
