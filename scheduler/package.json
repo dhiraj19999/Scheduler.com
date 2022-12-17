@@ -4,7 +4,8 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.13",
-    "@chakra-ui/react": "^2.4.3",
+    "@chakra-ui/react": "^2.4.4",
+    "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
@@ -14,7 +15,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.1",
-    "framer-motion": "^7.9.0",
+    "framer-motion": "^7.10.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",

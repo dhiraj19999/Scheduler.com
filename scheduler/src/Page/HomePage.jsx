@@ -1,15 +1,10 @@
 import React,{useState} from 'react';
 import "./HomePage.css";
 import CheckBox from '../Components/CheckBox';
-import { Button, Box, WrapItem, Wrap, ButtonGroup ,Checkbox, CheckboxGroup, InputGroup, Input , InputRightElement, Image, Flex, Center, Grid, GridItem ,
-    IconButton,
-    useBreakpointValue,
-    Stack,Text, Img,
+import { Button, Box, Image, Flex ,
+    Text, Img,
     Heading,
-    p,HStack,
-    Container,
-    flexbox,
-    SimpleGrid,} from "@chakra-ui/react";
+    } from "@chakra-ui/react";
 import { useMediaQuery } from '@chakra-ui/react'
 import Navbar from '../Components/Navbar/Navbar';
 
@@ -101,14 +96,14 @@ const HomePage = () => {
                 <Button w="150px" h="50px" bg="#9C95FF" borderRadius={"20px"} marginTop="50px" color="white" _hover={{cursor:"pointer"}}>
                     Get Started
                 </Button>
-                <p>No credit card needed * Unlimited time on Free Plan</p>
+                <p style={{marginTop:"20px"}}>No credit card needed * Unlimited time on Free Plan</p>
             </Box>
         </Box>
         <Box>
             <Image src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/image.png" w="100%" alt="Error"/>
         </Box>
-        <Box>
-            <Heading color="#4C4C4C">Trusted by 152,000+ customers worldwide</Heading>
+        <Box marginTop="20px" marginBottom="30px">
+            <center><Heading color="#4C4C4C">Trusted by 152,000+ customers worldwide</Heading></center>
         </Box>
         <Box id="box4">
                 <Box>
@@ -211,8 +206,10 @@ const HomePage = () => {
             
         </Box>
         <Box id="box8">
-            <p id="HomePage-heading1-box8"><span style={{fontWeight:"bolder"}}> Everything</span> you need for any <span style={{fontWeight:"bolder"}}> workflow</span></p>
-            <p>Easily build your ideal workflow with monday.com building blocks.</p>
+            <center>
+                <p id="HomePage-heading1-box8"><span style={{fontWeight:"bolder"}}> Everything</span> you need for any <span style={{fontWeight:"bolder"}}> workflow</span></p>
+                <p>Easily build your ideal workflow with monday.com building blocks.</p>
+            </center>
         </Box>
 
         {/* workflow */}

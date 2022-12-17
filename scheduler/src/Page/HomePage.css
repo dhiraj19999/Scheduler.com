@@ -4,6 +4,7 @@
 #box1 {
     background-color: #0F1048;
     height:700px;
+    margin-top: 90px;
 }
 #box1-check{
     display: flex;
@@ -13,7 +14,7 @@
     font-family: "Segoe UI Symbol";
     color:white;
     width:70%;
-    height:700px;
+    height:auto;
     margin:auto;
     display: flex;
     flex-direction: column;
@@ -163,7 +164,8 @@
     margin-top: 70px;
     width: 70%;
     margin: auto;
-    
+    text-align: center;
+    margin-bottom: 30px;
 }
 #box11{
     display: flex;
@@ -305,4 +307,60 @@ h4{
     flex-direction: column;
 
 }
+#HomePage-heading1-box2{
+    font-size: 20px;
+    margin-top: 20px;
+}
+#HomePage-heading2-box2{
+    font-size: 20px;
+}
+#HomePage-heading3-box2{
+    font-size: xx-small;
+}
+#box1-check{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+    background-color: #0F1048;
+}
+#box1{
+    margin-bottom: 0px;
+    height: 1150px;
+}
+#box7-0{
+    width: 100%;
+}
+#box7-1{
+    width: 100%;
+}
+#box11{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+#box13-1{
+    font-size: 10px;
+}
+#HomePage-heading1-box8{
+    font-size: 20px;
+}
+#box13-3{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+}
+#box13-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+#box5{
+    font-size: 20px;
+}
+#HomePage-heading2-box5{
+    font-size: 20px;
+}
+#HomePage-heading1-box5{
+    font-size: 20px;
+}
+
 }

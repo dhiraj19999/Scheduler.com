@@ -46,7 +46,7 @@ const AdminPage = () => {
       <div className="email-message overlay">
         <p>
           Please confirm your email address: user@gmail.com
-          <a href="">Resend email</a>
+          <a>Resend email</a>
         </p>
       </div>
       <Box  display="flex">
