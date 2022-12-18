@@ -54,13 +54,6 @@ let  toast=useToast()
    setMessage("")
    setPhone("")
   }
-
-
-
-
-
-
-  
   
     return (
     <div>

@@ -28,7 +28,7 @@ const LoginPage = () => {
             if (flag) {
                 alert("You Are Successfully Logged In.");
                 handleLogin(username,authState.isAuth=true);               
-                navigate("/");
+                navigate("/sidenav");
               } else {
                 alert("Wrong ID/Password");
               }
