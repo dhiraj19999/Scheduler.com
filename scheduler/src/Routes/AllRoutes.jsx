@@ -8,6 +8,7 @@ import Pricing from "../Page/Pricing/Pricing";
 import SideNavBar from "../Components/CalenderPage/SideNavBar"
 import ProjectPage from "../Components/Project/ProjectPage";
 import PrivateRoute from '../Components/PrivateRoute';
+import AdminPage from "../Components/AdminPage/AdminPage"
 
 const AllRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const AllRoutes = () => {
         <Route path='/signup' element={<SignupPage/>}/>
         <Route path='/sidenav' element={<PrivateRoute><SideNavBar/></PrivateRoute>}/>
         <Route path="/project" element={<PrivateRoute><ProjectPage/></PrivateRoute>}/>
+        <Route path="/admin" element={<><AdminPage/></>}/>
     </Routes>
   )
 }

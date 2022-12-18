@@ -525,6 +525,7 @@ export default function Navbar() {
             </Menu>
           </Flex>
           <Flex display={{ base: "none", sm: "none", md: "none", lg: "flex" }}>
+
             <Button variant="ghost" fontWeight="350">
   
               <NavLink to="/pricing">Pricing</NavLink>
@@ -537,6 +538,9 @@ export default function Navbar() {
             </Button>
             <Button variant="ghost" fontWeight="350" onClick={handleLogin}>
               Login
+            </Button>
+            <Button variant="ghost" fontWeight="350" >
+              <NavLink to="/login">Admin</NavLink>
             </Button>
             <Button
               bg="#6c6cff"
@@ -1159,6 +1163,9 @@ export default function Navbar() {
           <Button variant="ghost" fontWeight="350" onClick={handleLogout}>
             Logout
           </Button>
+          <Button variant="ghost" fontWeight="350" >
+              <NavLink to="/admin">Admin</NavLink>
+            </Button>
           <Button
             bg="#6c6cff"
             borderRadius="50"
