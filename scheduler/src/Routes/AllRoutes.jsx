@@ -3,10 +3,10 @@ import {Routes, Route} from 'react-router-dom'
 import HomePage from '../Page/HomePage';
 import LoginPage from '../Page/loginPage';
 import SignupPage from '../Page/SignupPage';
-import Contact from "../Page/Contact1";
+import Contact from "../Page/Contact";
 import Pricing from "../Page/Pricing/Pricing";
 import SideNavBar from "../Components/CalenderPage/SideNavBar"
-
+import ProjectPage from "../Components/Project/ProjectPage"
 
 const AllRoutes = () => {
   return (
@@ -17,6 +17,7 @@ const AllRoutes = () => {
         <Route path='/login' element={<LoginPage/>}/>
         <Route path='/signup' element={<SignupPage/>}/>
         <Route path='/sidenav' element={<SideNavBar/>}/>
+        <Route path="/project" element={<ProjectPage/>}/>
     </Routes>
   )
 }

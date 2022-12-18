@@ -361,7 +361,7 @@ const Pricing= () => {
     </div>
 
     <div className='head2'>
-              <h1>Over 152,000 customers worldwide rely on<br/> monday.com</h1>
+              <h1>Over 152,000 customers worldwide rely on<br/> scheduler.com</h1>
     </div>
 
     <div className='img'>
@@ -427,7 +427,7 @@ const Pricing= () => {
      <Frequently/> 
    
      <Box id="lastHeading">
-      <Heading fontSize="40px" marginBottom="10px">Start using monday.com today</Heading>
+      <Heading fontSize="40px" marginBottom="10px">Start using scheduler.com today</Heading>
     </Box>
     <Box id="para">
       <p fontSize="25px" marginBottom="10px">Try it now for free / No credit card needed</p>

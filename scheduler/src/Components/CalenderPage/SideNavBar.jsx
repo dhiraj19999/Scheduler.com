@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./SideNavBar.css";
 import { Box } from "@chakra-ui/react";
 import UserPage from "./userPage";
+import Navbar from "../Navbar/Navbar";
+import { NavLink } from "react-router-dom";
 
 const SideNavBar = () => {
   const [isExpanded, setExpendState] = useState(false);
@@ -41,12 +43,13 @@ const SideNavBar = () => {
   ];
   return (
     <>
-      <div className="email-message overlay">
+      {/* <div className="email-message overlay">
         <p>
           Please confirm your email address: user@gmail.com
           <a href="">Resend email</a>
         </p>
-      </div>
+      </div> */}
+      <Navbar/>
       <Box  display="flex">
         <Box  width="10%">
           <div
@@ -98,8 +101,8 @@ const SideNavBar = () => {
                       alt=""
                       srcset=""
                     />
-                    {isExpanded && <p>{text}</p>}
-                    {!isExpanded && <div className="tooltip">{text}</div>}
+                    {isExpanded && <p><NavLink to="/project">{text}</NavLink></p>}
+                    {!isExpanded && <div className="tooltip"><NavLink to="/project">{text}</NavLink></div>}
                   </a>
                 ))}
               </div>
