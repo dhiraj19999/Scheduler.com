@@ -31,7 +31,7 @@ let  toast=useToast()
   
   
   const sendEmail=()=>{
-
+//sending email//
     emailjs.send('service_amv7b8j','template_imu5bv7',form,'EzPjmd_YlK35hXceC').then((res)=>{
   
       return res
