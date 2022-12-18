@@ -6,7 +6,8 @@ import SignupPage from '../Page/SignupPage';
 import Contact from "../Page/Contact";
 import Pricing from "../Page/Pricing/Pricing";
 import SideNavBar from "../Components/CalenderPage/SideNavBar"
-import ProjectPage from "../Components/Project/ProjectPage"
+import ProjectPage from "../Components/Project/ProjectPage";
+import PrivateRoute from '../Components/PrivateRoute';
 
 const AllRoutes = () => {
   return (
@@ -16,8 +17,8 @@ const AllRoutes = () => {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/login' element={<LoginPage/>}/>
         <Route path='/signup' element={<SignupPage/>}/>
-        <Route path='/sidenav' element={<SideNavBar/>}/>
-        <Route path="/project" element={<ProjectPage/>}/>
+        <Route path='/sidenav' element={<PrivateRoute><SideNavBar/></PrivateRoute>}/>
+        <Route path="/project" element={<PrivateRoute><ProjectPage/></PrivateRoute>}/>
     </Routes>
   )
 }

@@ -1,10 +1,11 @@
 
 import React, { useState } from "react";
 import "../CalenderPage/SideNavBar.css";
-import { Box } from "@chakra-ui/react";
+import { Box,Button } from "@chakra-ui/react";
 
 
 import Project from "./Project";
+import { NavLink } from "react-router-dom";
 
 const ProjectPage = () => {
   const [isExpanded, setExpendState] = useState(false);
@@ -134,6 +135,7 @@ const ProjectPage = () => {
             </div>
           </div>
         </Box>
+        <Button marginTop={"40px"} marginLeft="200px"><NavLink to="/">Dashboard</NavLink></Button>
         <Box width="80%" margin={"auto"}>
         <Project/>
         </Box>
