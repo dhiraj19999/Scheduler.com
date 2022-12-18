@@ -7,6 +7,7 @@ import { Button, Box, Input ,Image,
     FormLabel,
     Heading,
     } from "@chakra-ui/react";
+import Navbar from "../Components/Navbar/Navbar";
 
 const LoginPage = () => {
     const {authState, handleLogin} = useContext(AppContext);
@@ -39,7 +40,8 @@ const LoginPage = () => {
     return (
         <div>
           <Box>
-            <Image position="relative" left="30px" src="https://cdn.monday.com/images/logos/monday_logo_short.png" h="50px" w="220px" />
+           {/*  <Image position="relative" left="30px" src="https://cdn.monday.com/images/logos/monday_logo_short.png" h="50px" w="220px" /> */}
+           <Navbar/>
           </Box>
           <hr style={{marginTop:"10px", marginBottom:"30px"}}></hr>
           <center>

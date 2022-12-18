@@ -8,6 +8,7 @@ import { Box,
     Heading,
     Button,
 } from "@chakra-ui/react";
+import Navbar from "../Components/Navbar/Navbar";
 
 function SignupPage() {
   const [username, setUsername] = useState("");
@@ -49,8 +50,9 @@ function SignupPage() {
         return (
           <div>
             <Box>
-                <Image position="relative" left="30px" src="https://cdn.monday.com/images/logos/monday_logo_short.png" h="50px" w="220px" />
-            </Box>
+           {/*  <Image position="relative" left="30px" src="https://cdn.monday.com/images/logos/monday_logo_short.png" h="50px" w="220px" /> */}
+           <Navbar/>
+          </Box>
             <hr style={{marginTop:"10px", marginBottom:"0px"}}></hr>
             <Flex w="80%" margin="auto" h={"700px"}>
                 <Box >
