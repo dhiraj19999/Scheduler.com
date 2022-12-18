@@ -3,8 +3,8 @@ import {Routes, Route} from 'react-router-dom'
 import HomePage from '../Page/HomePage';
 import LoginPage from '../Page/loginPage';
 import SignupPage from '../Page/SignupPage';
-import Contact from "../Page/Contact";
-import Pricing from "../Page/Pricing/Pricing"
+import Contact from "../Page/Contact1";
+import Pricing from "../Page/Pricing/Pricing";
 import SideNavBar from "../Components/CalenderPage/SideNavBar"
 
 

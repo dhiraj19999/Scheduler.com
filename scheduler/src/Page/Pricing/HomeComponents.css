@@ -1,0 +1,67 @@
+#landing-video{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    top:0;
+    left:0;
+    position: absolute;
+  }
+  #tab-video{
+    z-index: -1;
+    top:0;
+    left:0;
+    position: absolute;
+  }
+  
+  
+  #container_Client{
+                  width:100%;
+                  text-align: center;
+                  height:500px;
+                  /* background-color: #f0f0f5; */
+              }
+  
+              #main_Client{
+                  width:80%;
+                  text-align: center;
+                  position: relative;
+                  height:400px;
+                  /* background-color:rgba(118, 118, 118, 0.168);  */
+                  margin: auto;
+                  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+              }
+  
+              #crauser-title{
+                  margin-bottom: 2px;
+                  font-weight: 700;
+                  font-size: 24px;
+                  color: #1f1f1f;
+                  line-height: 30px;
+                  display: block;
+              }
+  
+  
+              #crauser-desin{
+                  margin-bottom: 2px;
+                  font-size: 15px;
+                  color: #454545;
+                  line-height: 30px;
+                  font-style: italic
+              }
+              
+              #crauser-img{
+                  margin-top:20px;
+                  width: 35%;
+                  height: 25%;
+                  background-color: aliceblue;
+                  /* border-radius: 50%; */
+                  margin-bottom: 70px;
+              }
+              #crauser-para{
+                  font-weight: 300;
+                  font-size: 30px;
+                  color: #1f1f1f;
+                  line-height: 33px;
+                  font-style:normal;  
+              }

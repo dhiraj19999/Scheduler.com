@@ -345,15 +345,15 @@ const HomePage = () => {
             <p>Our support superheroes are a click away to help you get the most out of monday.com, so you can focus on working without limits.</p>
             <Box id="box13-2">
                 <Box id="box13-3">
-                    <img width="50px" height="40px" style={{marginTop:"20px",display:"flex", justifyContent:"center", alignItem:"center"}} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/phone.png" alt="Error" />
+                    <img width="40px" height="10px" style={{marginTop:"20px",display:"flex", justifyContent:"center", alignItem:"center"}} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/phone.png" alt="Error" />
                     <p><span style={{fontWeight:"bolder"}}>24/7</span><br/>support<br/>anytime,<br/>anywhere</p>
                 </Box>
                 <Box id="box13-3">
-                    <img width="50px" height="40px" style={{marginTop:"20px",display:"flex", justifyContent:"center", alignItem:"center"}} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/heart.png" alt="Error" />
+                    <img width="40px" height="10px" style={{marginTop:"20px",display:"flex", justifyContent:"center", alignItem:"center"}} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/heart.png" alt="Error" />
                     <p><span style={{fontWeight:"bolder"}}>Most Loved by</span><br/>customers on<br/>anytime,<br/>G2</p>
                 </Box>
                 <Box id="box13-3">
-                    <img width="50px" height="40px" style={{marginTop:"20px",display:"flex", justifyContent:"center", alignItem:"center"}} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/fast.png" alt="Error" />
+                    <img width="60px" height="10px" style={{marginTop:"20px",display:"flex", justifyContent:"center", alignItem:"center"}} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/customer-support/fast.png" alt="Error" />
                     <p><span style={{fontWeight:"bolder"}}>2 hour</span><br/>average<br/>anytime,<br/>response time</p>
                 </Box>
             </Box>

@@ -6,7 +6,7 @@ import { Box } from '@chakra-ui/react'
 import { PhoneIcon } from '@chakra-ui/icons'
 import emailjs from '@emailjs/browser'
 import { useToast } from '@chakra-ui/react'
-import Navbar from '../Components/Navbar/Navbar'
+
 import "./Contact.css"
 function Contact() {
   
@@ -58,64 +58,64 @@ let  toast=useToast()
     return (
     <div>
       
-<Navbar/>
+
 <Grid templateColumns='repeat(2, 1fr)' gap={6}  mt='30px' >
 
  <Box  w='88%' ml='50px' h='783px' mt='60px'  borderBottom={"8px solid "} borderLeft="15px solid " borderRadius='8px' borderLeftColor={'blue.200'}  borderBottomColor={'blue.200'}> 
   <GridItem w='590px' h='790px' mt='-45px' borderRadius={'20px'} className='grid'>
 
-<Text  fontSize='25px' mt={'30px'} pt='30px' ml='160px'>Contact our Sales team</Text>
+<Text  fontSize='25px' mt={'30px'} pt='30px' ml='-205px'>Contact our Sales team</Text>
 
 <Grid templateColumns='repeat(2, 1fr)' gap={6} mt='25px' >
-    <Text ml='31px'>First Name</Text> <Text ml='-24px'>Last Name</Text>
+    <Text ml='-70px'>First Name</Text> <Text ml='-200px'>Last Name</Text>
 </Grid>
 
-<Input  focusBorderColor='pink.400'  size='md' w='210px' mt='10px' ml='30px' value={first} onChange={(e)=>setFirst(e.target.value)}/>
+<Input size='md' w='210px' mt='10px' value={first} onChange={(e)=>setFirst(e.target.value)}/>
 
-<Input  focusBorderColor='pink.400'  size='md' w='210px' ml='40px' mt='10px'  value={last} onChange={(e)=>setLast(e.target.value)}/>
+<Input size='md' w='210px' ml='40px' mt='10px'  value={last} onChange={(e)=>setLast(e.target.value)}/>
  
  
  
 <Grid templateColumns='repeat(2, 1fr)' gap={6}  mt='30px'>
-    <Text ml='31px'>Work email</Text> <Text ml='-24px'>Job title
+    <Text ml='-70px'>Work email</Text> <Text ml='-200px'>Job title
 </Text>
 </Grid>
 
-<Input  focusBorderColor='pink.400' placeholder='name@company.com' _placeholder={{ opacity: 1, color: 'teal' }} size='md' w='210px' mt='10px' ml='30px'  value={email} onChange={(e)=>setEmail(e.target.value)}/>
+<Input placeholder='name@company.com' size='md' w='210px' mt='10px'  value={email} onChange={(e)=>setEmail(e.target.value)}/>
 
-<Input  focusBorderColor='pink.400'  size='md' w='210px' ml='40px' mt='10px'  value={job} onChange={(e)=>setJob(e.target.value)}/>
+<Input  size='md' w='210px' ml='40px' mt='10px'  value={job} onChange={(e)=>setJob(e.target.value)}/>
  
  
-<Text ml='31px' mt='30px'>Phone number</Text>
+<Text ml='-355px' mt='30px'>Phone number</Text>
 <InputGroup mt='10px'>
     <InputLeftElement
       pointerEvents='none'
-      children={<PhoneIcon color='green.300' ml='50px'/>}
+      children={<PhoneIcon color='green.300' ml='130px'/>}
     />
-    <Input type='tel' placeholder='Phone number' focusBorderColor='pink.400'  _placeholder={{ opacity: 1, color: 'teal' }} size='md' w='460px' ml='30px' value={phone} onChange={(e)=>setPhone(e.target.value)}/>
+    <Input type='tel' placeholder='Phone number'  size='md' w='460px' ml='70px' value={phone} onChange={(e)=>setPhone(e.target.value)}/>
   </InputGroup>
 
 
 
 <Grid templateColumns='repeat(2, 1fr)' gap={6}  mt='30px'>
-    <Text ml='31px'>Company name</Text> <Text ml='-24px'>Company size
+    <Text ml='-34px'>Company name</Text> <Text ml='-173px'>Company size
 </Text>
 </Grid>
 
-<Input  focusBorderColor='pink.400' size='md' w='210px' mt='10px' ml='30px' value={company} onChange={(e)=>setCompany(e.target.value)}/>
+<Input  size='md' w='210px' mt='10px' value={company} onChange={(e)=>setCompany(e.target.value)}/>
 
-<Input  focusBorderColor='pink.400' size='md' w='210px' ml='40px' mt='10px' value={number} onChange={(e)=>setNumber(e.target.value)} />
+<Input  size='md' w='210px' ml='40px' mt='10px' value={number} onChange={(e)=>setNumber(e.target.value)} />
 
 
 
-<Text ml='31px' mt='30px'>How can our team help you?
+<Text ml='-260px' mt='30px'>How can our team help you?
 </Text>
-<Input  focusBorderColor='pink.400' size='md' w='460px' ml='30px' mt='10px' h='100px'  value={message} onChange={(e)=>setMessage(e.target.value)}/>
+<Input  size='md' w='460px' ml='-1px' mt='10px' h='100px'  value={message} onChange={(e)=>setMessage(e.target.value)}/>
  
 
 <Text fontSize='14px' mt='25px' ml='120px' w='350px'>By clicking submit, I acknowledge receipt of the Schedular.com Privacy policy</Text>
 
-<Button  onClick={sendEmail}  bg='blue.500' _hover={{bg:'violet'}}  w='120px' mt='26px' ml='210px'>Submit</Button>
+<Button  onClick={sendEmail}  bg='blue.500' _hover={{bg:'violet'}}  w='120px' mt='26px' ml='-50px'>Submit</Button>
   </GridItem>
   </Box>
  

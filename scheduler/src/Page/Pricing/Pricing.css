@@ -8,6 +8,7 @@
     font-size:bold;
     font-size: 25px;
     margin-bottom: 10%;
+    margin-left: 08%;
 }
 .head h1{
     font-style: normal;
@@ -17,14 +18,17 @@
 .head p{
     font-style: normal;
     margin-bottom: 20px;
+    text-align: center;
+    margin-right: 15px;
 }
 .head button{
     background-color:#6c6cff;
     border-radius: 20px;
     height: 40px;
-    width: 11%;
+    width: 15%;
     color: white;
     border: none;
+    margin-right:08%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .box{
@@ -35,10 +39,12 @@
 .box2{
     font-size: 30px;
     font-weight: 200px;
+    text-align: center;
 }
 .head2{
     margin-top: 40px;
     font-size: 50px;
+    text-align: center;
 }
 
 .img{
@@ -47,3 +53,24 @@
     margin-left: 150px;
     margin-top: 20px;
 } 
+
+#lastHeading{
+    margin-top: 42%;
+   text-align: center;
+   font-size: 80px;
+}
+#para{
+    text-align: center;
+    font-size: 20px;
+}
+#btn{
+    text-align: center;
+    background-color: #6c6cff;
+    width: 10%;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

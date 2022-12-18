@@ -1,7 +1,9 @@
 import React from 'react';
+//import Navbar from "../../Components/Navbar/Navbar";
+import ClinetTestimonial from "./ClinetTestimonial";
+import Frequently from './Frequently';
 import { Link } from "@chakra-ui/react";
-import { CheckIcon } from "@chakra-ui/icons";
-import {
+import {Box,Heading,
     Flex,
     Text,
     VStack,
@@ -15,19 +17,19 @@ import {
     MenuItem,
   }from "@chakra-ui/react";
   import { Image } from "@chakra-ui/react";
-  import NormalButton from "../../Components/NormalButton"
-  import { Avatar, AvatarBadge, AvatarGroup } from '@chakra-ui/react'
+  import NormalButton from "../../Components/NormalButton";
   import "./Pricing.css";
-  
+import Navbar from '../../Components/Navbar/Navbar';
 
 const Pricing= () => {
   return (
+    
     <div className='container'>
-      
+       <Navbar/>
         <div className='head'>
-              <h1>Supercharge your teamwork. Start <a style={{color:"#6c6cff"}}>free</a>.</h1>
+              <center><h1>Supercharge your teamwork. Start <a style={{color:"#6c6cff"}}>free</a>.</h1></center>
                  <p>Unlimited boards and workflows. No credit card needed.</p>
-           <button >Get Started</button>
+           <center><button >Get Started</button></center>
         </div>
     
     <div className='box'>
@@ -75,7 +77,7 @@ const Pricing= () => {
             <br/>
             <br/>
           </Text>
-            <Link style={{width:"100%", textDecoration:"none" }} href='./Checkout'><NormalButton borderRadius="10px" text="Try for free" /></Link>
+          <center><Link href='./Checkout'><button  style={{width:"150px", height:"40px", borderRadius:"20px",backgroundColor:"#6C6CFF", color:"white", fontWeight:"bold"}}>Try for free</button></Link></center>
           <Text fontSize="15px" color="#8A9FC7" mt="100px" >
           For individuals looking to <br/>keep track of their work
           </Text>
@@ -142,7 +144,7 @@ const Pricing= () => {
             </Text>
           </Text>
 
-          <Link style={{width:"100%", textDecoration:"none",}} href='./Checkout'><NormalButton borderRadius="10px" text="Try for free" /></Link>
+          <center><Link href='./Checkout'><button  style={{width:"150px", height:"40px", borderRadius:"20px",backgroundColor:"#6C6CFF", color:"white",fontWeight:"bold"}}>Try for free</button></Link></center>
           <Text fontSize="15px" color="#8A9FC7" >
           Manage all yours teams' <br/>work in one place
           </Text>
@@ -203,11 +205,11 @@ const Pricing= () => {
            < br/>
             <Text as="span" fontSize="12px" mb="20px"> 
             billed annually
-            </Text>
+ </Text>
             
           </Text>
           
-          <NormalButton borderRadius="10px"  text="Try for free" />
+          <center><Link href='./Checkout'><button  style={{width:"150px", height:"40px", borderRadius:"20px",backgroundColor:"#6C6CFF", color:"white",fontWeight:"bold"}}>Try for free</button></Link></center>
           <Text fontSize="15px" color="#8A9FC7" >
           Collaborate and optimize' <br/>Your team processes
           </Text>
@@ -270,7 +272,7 @@ const Pricing= () => {
             
           </Text>
           
-          <NormalButton borderRadius="10px" text="Try for free" />
+          <center><Link href='./Checkout'><button  style={{width:"150px", height:"40px", borderRadius:"20px",backgroundColor:"#6C6CFF", color:"white",fontWeight:"bold"}}>Try for free</button></Link></center>
           <Text fontSize="15px" color="#8A9FC7" >
           Streamline and run your <br/>teams'complex workflows
           </Text>
@@ -286,18 +288,7 @@ const Pricing= () => {
                     <Tr align="left">
                         <Td>Private boards and docs <br/><br/>Chart view</Td>
                     </Tr>
-                    {/* <Tr align="left">
-                        <Td>Chart view</Td>
-                    </Tr > */}
-                    {/* <Tr align="left">
-                        <Td>Time tracking</Td>
-                    </Tr> */}
-                    {/* <Tr>
-                        <Td>Formula Column</Td>
-                    </Tr> */}
-                    {/* <Tr>
-                        <Td>Dependency column</Td>
-                    </Tr> */}
+                    
                     <Tr>
                         <Td>Automations<br/>(25000 actions per month)</Td>
                     </Tr>
@@ -326,7 +317,8 @@ const Pricing= () => {
            alt="logo"
           />
           <div className='gap'><br/><br/><br/><br/></div>
-          <NormalButton borderRadius="10px" Bgcolor="white" color="#6c6cff" text="Contact us" />
+          <center><Link href='./Checkout'><button  style={{width:"150px", height:"40px", borderRadius:"20px",backgroundColor:"#6C6CFF", color:"white", fontWeight:"bold"}}>Contact Us</button></Link></center>
+                    
           <Text fontSize="15px" color="#8A9FC7" >
           For organization seeking enterprise-grade features
           </Text>
@@ -348,9 +340,7 @@ const Pricing= () => {
                     <Tr align="left">
                         <Td>Advanced reporting & <br/><br/>Multi-level Premium support</Td>
                     </Tr>
-                    {/* <Tr>
-                        <Td>Multi-level Premium support</Td>
-                    </Tr> */}
+                    
                     <Tr>
                         <Td>Create a dashboard that <br/>combines up to 50 boards</Td>
                     </Tr>
@@ -363,7 +353,7 @@ const Pricing= () => {
     
     <div className='box2'>
     <Menu isLazy>
-    <Menu>Complete feature list</Menu>
+    {/* <Menu>Complete feature list</Menu> */}
     <MenuList>
     <MenuItem>New Window</MenuItem>
     </MenuList>
@@ -430,14 +420,139 @@ const Pricing= () => {
            alt="logo"
           />
     </div>
-        
-    <div className='faq'>
-    </div>
+
+    <ClinetTestimonial />
+
+   
+     <Frequently/> 
+   
+     <Box id="lastHeading">
+      <Heading fontSize="40px" marginBottom="10px">Start using monday.com today</Heading>
+    </Box>
+    <Box id="para">
+      <p fontSize="25px" marginBottom="10px">Try it now for free / No credit card needed</p>
+    </Box>
+    <Box id="btn">
+      <button style={{height:"50px"}} ><a href="Login">Get Started</a></button>
+    </Box>
 
 
+    {/* Footer */}
+    <Box id="box-14">
+        <Box id="box14-0">
+            <Heading color={"white"} size="l">Scheduler.com</Heading>
+            <a href="//monday.com/integrations/" target="_blank">Pricing</a>
+            <a href="//monday.com/integrations/" target="_blank">Contact us</a>
+            <a href="//monday.com/integrations/" target="_blank">Templates</a>
+            <a href="//monday.com/integrations/" target="_blank">SMB</a>
+            <a href="//monday.com/integrations/" target="_blank">Enterprise</a>
+            <a href="//monday.com/integrations/" target="_blank">Nonprofits</a>
+            <a href="//monday.com/integrations/" target="_blank">Apps marketplace</a>
+            <a href="//monday.com/integrations/" target="_blank">24/7 support</a>
+        </Box>
+
+        <Box id="box14-0">
+            <Heading color={"white"} size="l">Features</Heading>
+            <a href="//monday.com/integrations/" target="_blank">Docs</a>
+            <a href="//monday.com/integrations/" target="_blank">Integrations</a>
+            <a href="//monday.com/integrations/" target="_blank">Automations</a>
+            <a href="//monday.com/integrations/" target="_blank">Files</a>
+            <a href="//monday.com/integrations/" target="_blank">Dashboards</a>
+            <a href="//monday.com/integrations/" target="_blank">Kanban</a>
+            <a href="//monday.com/integrations/" target="_blank">Gantt</a>
+        </Box>
+
+        <Box id="box14-03">
+            <Heading color={"white"} size="l">Scheduler products</Heading>
+            <div style={{display:"flex", gap:"5px"}}>
+               <div style={{width:"5%", marginTop:"0px"}}>
+                    <img width={"100%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/wm_icon_footer.png" alt="Error" />
+               </div>
+               <a href="//monday.com/integrations/" target="_blank">Scheduler Work Management</a>
+            </div>
+            <div style={{display:"flex", gap:"5px"}}>
+               <div style={{width:"5%", marginTop:"0px"}}>
+                    <img width={"100%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/crm_icon_footer.png" alt="Error" />
+               </div>
+               <a href="//monday.com/integrations/" target="_blank">Scheduler Sales CRM</a>
+            </div>
+            <div style={{display:"flex", gap:"5px"}}>
+               <div style={{width:"5%", marginTop:"0px"}}>
+                    <img width={"100%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/marketer_icon_footer.png" alt="Error" />
+               </div>
+               <a href="//monday.com/integrations/" target="_blank">Scheduler Marketer</a>
+            </div>
+            <div style={{display:"flex", gap:"5px"}}>
+               <div style={{width:"5%", marginTop:"0px"}}>
+                    <img width={"100%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/projects_icon_footer.png" alt="Error" />
+               </div>
+               <a href="//monday.com/integrations/" target="_blank">Scheduler Projects</a>
+            </div>
+            <div style={{display:"flex", gap:"5px"}}>
+               <div style={{width:"5%", marginTop:"0px"}}>
+                    <img width={"100%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/monday_dev_product_management_software.png" alt="Error" />
+               </div>
+               <a href="//monday.com/integrations/" target="_blank">Scheduler Dev</a>
+            </div>
+            <br/>
+            <h4>More by Scheduler.com</h4>
+            <div style={{display:"flex", gap:"5px"}}>
+               <div style={{width:"5%", marginTop:"0px"}}>
+                    <img width={"100%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/canvas_icon_footer.png" alt="Error" />
+               </div>
+               <a href="//monday.com/integrations/" target="_blank">Canvas</a>
+            </div>
+            <div style={{display:"flex", gap:"5px"}}>
+               <div style={{width:"5%", marginTop:"0px"}}>
+                    <img width={"100%"} src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/workforms_icon_footer.png" alt="Error" />
+               </div>
+               <a href="//monday.com/integrations/" target="_blank">WorkForms</a>
+            </div>
+        </Box>
+
+        <Box id="box14-0">
+            <Heading color={"white"} size="l">Use cases</Heading>
+            <a href="//monday.com/integrations/" target="_blank">Marketing</a>
+            <a href="//monday.com/integrations/" target="_blank">Project management</a>
+            <a href="//monday.com/integrations/" target="_blank">Sales</a>
+            <a href="//monday.com/integrations/" target="_blank">Developers</a>
+            <a href="//monday.com/integrations/" target="_blank">HR</a>
+            <a href="//monday.com/integrations/" target="_blank">IT</a>
+            <a href="//monday.com/integrations/" target="_blank">Operations</a>
+            <a href="//monday.com/integrations/" target="_blank">Construction</a>
+        </Box>
+
+        <Box id="box14-0">
+            <Heading color={"white"} size="l">Company</Heading>
+            <a href="//monday.com/integrations/" target="_blank">About Us</a>
+            <a href="//monday.com/integrations/" target="_blank">Careers - We're hiring!</a>
+            <a href="//monday.com/integrations/" target="_blank">Scheduler - U</a>
+            <a href="//monday.com/integrations/" target="_blank">Press</a>
+            <a href="//monday.com/integrations/" target="_blank">Press</a>
+            <a href="//monday.com/integrations/" target="_blank">Customer Stories</a>
+            <a href="//monday.com/integrations/" target="_blank">Become a partner</a>
+            <a href="//monday.com/integrations/" target="_blank">Sustainability & ESG</a>
+            <a href="//monday.com/integrations/" target="_blank">Affiliates</a>
+            <a href="//monday.com/integrations/" target="_blank">Digital Lift</a>
+        </Box>
+
+        <Box id="box14-0">
+            <Heading color={"white"} size="l">Resources</Heading>
+            <a href="//monday.com/integrations/" target="_blank">Help Center</a>
+            <a href="//monday.com/integrations/" target="_blank">Community</a>
+            <a href="//monday.com/integrations/" target="_blank">Blog</a>
+            <a href="//monday.com/integrations/" target="_blank">Webinars</a>
+            <a href="//monday.com/integrations/" target="_blank">Startup for Startup</a>
+            <a href="//monday.com/integrations/" target="_blank">Global events</a>
+            <a href="//monday.com/integrations/" target="_blank">App Development</a>
+            <a href="//monday.com/integrations/" target="_blank">Find a Partner</a>
+            <a href="//monday.com/integrations/" target="_blank">Compare</a>
+        </Box>
+    </Box>
 
 
-  </div>
+   </div>
+    
   )
 }
 export default Pricing;

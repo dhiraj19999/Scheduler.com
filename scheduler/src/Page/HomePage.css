@@ -24,10 +24,12 @@
 }
 #HomePage-heading1-box2{
     /* margin-bottom: -100px; */
-    font-size: 80px;
+    font-size: 70px;
+    margin-bottom: 10px;
+    margin-top:15px;
 }
 #HomePage-heading2-box2{
-    font-size: 80px;
+    font-size: 70px;
     margin-top: -50px;
 }
 #HomePage-heading3-box2{
