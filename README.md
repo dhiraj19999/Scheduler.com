@@ -1,7 +1,18 @@
-# Scheduler.com
+# Scheduler.com ( Clone - Monday.com )
 
-Schdeular.com is a powerful project management system which help to complete projects efficientl. Price,Login,Admin, Calender system are developed its collaborative project,
-completed in five days, area of responsibility is to Develope Contact section
+Schdeular.com is a powerful project management system which help to complete projects efficientl. Price,Login,Admin, Calender system are developed its collaborative project
+
+# Tech Stack Used
+  - React
+  - CSS
+  - Chakra UI
+  
+# Completed By 5 developers in five days
+ - Dhiraj Garad
+ - Avinash Kaushik
+ - Pallavi Jain
+ - Kirtiraj Ingale
+ - Parag Sonje
 
 
 # Images of Scheduler.com
