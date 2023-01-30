@@ -1,6 +1,6 @@
 # Scheduler.com ( Clone - Monday.com )
 
-Schdeular.com is a powerful project management system which help to complete projects efficientl. Price,Login,Admin, Calender system are developed its collaborative project
+Schdeular.com is a powerful project management system which help to complete projects efficiently. Price,Login,Admin, Calender system are developed its collaborative project
 
 # Tech Stack Used
   - React
