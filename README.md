@@ -15,11 +15,7 @@ Schdeular.com is a powerful project management system which help to complete pro
  - Parag Sonje
 
 
-# Images of Scheduler.com
-
-
-
-
+# Overview
 
 ![sce6](https://user-images.githubusercontent.com/106136277/212605251-7e6d8f8c-232b-4eef-8254-17532c0176e6.png)
 ![sce2](https://user-images.githubusercontent.com/106136277/212605255-5031ec27-7b56-4bae-9887-a5e5136c22e6.png)
