@@ -1,6 +1,6 @@
 # Scheduler.com ( Clone - Monday.com )
 
-Schdeular.com is a powerful project management system which help to complete projects efficiently.................
+Schdeular.com is a powerful project management system which help to complete projects efficiently...............
 
 ## [Netlify Deployed Link](https://schedulermonday.netlify.app/)
 
